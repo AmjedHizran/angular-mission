@@ -1,0 +1,21 @@
+<section>
+  <div id=search>
+      <input type="text"  placeholder="Type to search.." [(ngModel)]="search"> 
+  </div>    
+  <table class="border">
+          <tr>
+              <th>Name</th>
+              <th>Native Name</th>
+              <th>Capital</th>
+              <th>Population</th>
+              <th>Flag</th>
+          </tr>
+          <tr *ngFor = "let x of countries | filtered : 'name' : search;">
+              <td>{{x.name}}</td>
+              <td>{{x.nativeName}}</td>
+              <td>{{x.capital}}</td>
+              <td>{{x.population}}</td>
+              <td><img src="{{x.flag}}" /></td>
+          </tr>
+      </table>
+</section>
