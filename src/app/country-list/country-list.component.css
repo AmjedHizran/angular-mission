@@ -11,14 +11,14 @@ img{
 }
 
  th, td{
-    border: 1px solid rgb(148, 148, 148);
+    border: 1px solid rgb(255, 255, 255);
     text-align: center;
     padding: 2px;
 }
 
 table{
     padding: 2px;
-    border: 1px solid rgb(148, 148, 148);
+    border: 1px solid rgb(254, 254, 254);
     text-align: center;
     display: block;
     width: 780px;
